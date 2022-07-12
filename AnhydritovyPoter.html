@@ -4,7 +4,7 @@
   <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, user-scalable=no" />
-      <title>Ukážka práce spoločnosti Artenom s.r.o - Home</title>
+      <title>Ukážka práce spoločnosti Artenom s.r.o - AnhydritovyPoter</title>
       <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
       <link rel="stylesheet" href="public/lightslider/css/lightslider.min.css" />
       <link rel="stylesheet" href="public/videojs/video-js.min.css" />
@@ -29,7 +29,7 @@
         Breadcrumbs of parent albums
       -->
       <nav class="breadcrumbs">
-    <a class="breadcrumb-item" href="index.html">Home</a>
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="AnhydritovyPoter.html">AnhydritovyPoter</a>
       </nav>
     
     
@@ -37,20 +37,31 @@
         Nested albums, if any
       -->
       <div id="albums" class="justified-gallery">
-            <a href="AnhydritovyPoter.html">
-              <img src="media/small/AnhydritovyPoter/IMG_2701.jpg" alt="">
-              <div class="caption" style="display: inline-block">
-                <h3>AnhydritovyPoter</h3>
-                <div class="summary">2 photos</div>
-              </div>
-            </a>
       </div>
     
       <!--
         All photos and videos
       -->
       <ul id="media" class="clearfix justified-gallery">
-      </ul>
+          
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/AnhydritovyPoter/IMG_2701.jpg"data-src="media/large/AnhydritovyPoter/IMG_2701.jpg"data-exthumbimage="media/thumbs/AnhydritovyPoter/IMG_2701.jpg"data-filename="IMG_2701.jpg"><a href="media/large/AnhydritovyPoter/IMG_2701.jpg"><img
+                      src="media/small/AnhydritovyPoter/IMG_2701.jpg"
+                      width="225"
+                      height="300"alt="IMG_2701.jpg"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/AnhydritovyPoter/IMG_2702.jpg"data-src="media/large/AnhydritovyPoter/IMG_2702.jpg"data-exthumbimage="media/thumbs/AnhydritovyPoter/IMG_2702.jpg"data-filename="IMG_2702.jpg"><a href="media/large/AnhydritovyPoter/IMG_2702.jpg"><img
+                      src="media/small/AnhydritovyPoter/IMG_2702.jpg"
+                      width="225"
+                      height="300"alt="IMG_2702.jpg"/>
+              </a>
+          
+          </div>  </ul>
     
       <!--
         Pagination
@@ -113,30 +124,6 @@
       });
     </script>
 
-      <script id="slider-js" data-interval="">
-        $(document).ready(function () {
-          let waitTime = 1000;
-
-          try {
-            waitTime = parseInt($("#slider-js").data("interval"));
-          } catch (e) {
-            console.error("Invalid speed value for slider: " + waitTime + "\n" + e);
-          }
-
-          $("#lightSlider").lightSlider({
-            auto: true,
-            loop: true,
-            item: 1,
-            gallery: true,
-            pause: waitTime,
-            onSliderLoad: (el) => {
-              el.lightGallery({
-                selector: "#lightSlider li"
-              })
-            }
-          });
-        });
-      </script>
 
 
   </body>
