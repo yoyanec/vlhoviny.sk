@@ -8,6 +8,6 @@
   "cleanup": true,
   "theme": "flow",
   "css": "./custom.css",
-  "footer": " ",
+  "footer": "",
   "usage-stats": false
 }
