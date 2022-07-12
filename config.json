@@ -1,6 +1,6 @@
 {
   "input": "./gallery",
-  "output": "./output",
+  "output": "./build_output",
   "title": "Ukážka práce spoločnosti Artenom s.r.o",
   "sort-albums-by": "title",
   "sort-media-by": "filename",
